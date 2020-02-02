@@ -1,0 +1,26 @@
+on-demand, scalable compute services without the burden of building and maintining their own hardware and data centers
+
+on-demand, IT resources, accessable online, pay as you go
+
+AWS vs On-Premise
+- avoid large capital expenses. no upfront investment
+- reduce on-going IT costs. multiple pricing options. on-premise requires upgrades on 1-3-5 year cycles. cost of labor and sys addmin
+- no need to predict the amount of computing resourses. low on-going costs
+- elastic scalability
+- deploy apps in any regions --> low latency. global reach on demand
+- speed and agility
+
+# Infrastructure
+- Security: Security groups, NACLs, Access Mgmt
+- Network: ELB, VPC
+- Servers: EC2
+- Storage and db: EBS, S3, RDS
+
+- region is a georaphic area with 2 or more Availability Zones. choose a region where your data will be stored -> ooptimize latency
+- AZ: collection of data centers within a region. Each is isolated from other AZ and is connected by a fast low latency link. represented by a region code: us-east-1a
+- edge locations host a content delivery network CDN called CloudFront. --> deliver websites and content that is dynamic, static, or streaming. request for content are auto routed to the neartest edge location to speed up
+- use multiple AZ to protect against interruptions and CloudFront ensure web pages load quickly
+
+
+- EC2: virtual servers that have remote access
+- use AWS Management Console or AWS API
